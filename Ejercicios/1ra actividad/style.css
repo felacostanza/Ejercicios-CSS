@@ -3,12 +3,101 @@
     margin: 0;
 }
 
+body{
+    background: linear-gradient(rgba(39,45,54,255), rgb(22, 22, 22), black);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+header{
+    text-align: center;
+    background-image: url(deathstar.jpg);
+    color: white;
+}
+
+.apoyo{
+    background: linear-gradient(to bottom right, black, grey);
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    border: 2px;
+    border-style: solid;
+    border-color: white;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+header h1{
+    padding: 15px;
+}
+
+header img{
+    padding: 20px;
+    border: 2px;
+    border-style: solid;
+    border-color: goldenrod;
+    border-radius: 15px;
+    transition: transform .5s;
+}
+
+header img:hover{
+    transform: scale(1.05);
+}
+
+.subtitulo{
+    color: white;
+    padding: 20px;
+}
+
+#subtitulo-imperio{
+    text-transform: uppercase;
+    padding: 30px;
+    background: linear-gradient(to bottom right, black, red);
+    margin-top: 20px;
+    border-radius: 15px;
+    border: 2px;
+    border-style: solid;
+    border-color: white;
+}
+
+ul{
+    list-style: none;
+}
+
 .imperio{
-    background-color: red;
+    background: linear-gradient(to bottom right, black, red);
+    padding: 20px 16px;
+    text-transform:uppercase;
+    font-weight: bolder;
+    border-radius: 15px;
+    border: 2px;
+    border-style: solid;
+    border-color: white;
+}
+
+#subtitulo-rebeldes{
+    text-transform: uppercase;
+    color: white;
+    background: linear-gradient(to bottom right, black, blue);
+    padding: 30px;
+    margin-top: 20px;
+    border-radius: 15px;
+    border: 2px;
+    border-style: solid;
+    border-color: white;
 }
 
 .rebeldes{
-    background-color: blue;
+    background: linear-gradient(to bottom right, black, blue);
+    padding: 14px 16px;
+    color: white;
+    text-transform:uppercase;
+    font-weight: bolder;
+    border-radius: 15px;
+    border: 2px;
+    border-style: solid;
+    border-color: white;
 }
 
 .darthvader{
@@ -21,7 +110,7 @@
 
 .soldados{
     letter-spacing: 10px;
-    border: 2px dashed;
+    border: 5px dashed;
 }
 
 .apoyo{
@@ -34,4 +123,66 @@
 
 .droides{
     text-align: center;
+}
+
+.imagenimp{
+    filter: drop-shadow(0px 0px 30px red);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /*box-shadow: 0px 0px 50px red;
+    border: 2px;
+    border-style: solid;
+    border-color: red;
+    border-radius: 15px;*/
+}
+
+.imagenreb{
+    filter: drop-shadow(0px 0px 30px blue);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /*box-shadow: 0px 0px 50px blue;
+    border: 2px;
+    border-style: solid;
+    border-color: blue;
+    border-radius: 15px;*/
+}
+
+.imgdroides{
+    filter: drop-shadow(0px 0px 30px blue);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /*box-shadow: 0px 0px 50px blue;
+    border: 2px;
+    border-style: solid;
+    border-color: blue;
+    border-radius: 15px;*/
+}
+
+.columnizq{
+    float: left;
+    width: 20%;
+}
+
+.columnizq p{
+    color: transparent;
+}
+
+.columnmedio{
+    float: left;
+    width: 60%;
+    text-align: center;
+    background-image: url(estrellas.jpg);
+    background-repeat: repeat-y;
+}
+
+.columnder{
+    float: left;
+    width: 20%;
+}
+
+@media screen and (max-width: 600px) {
+    .columnizq, .columnmedio, .columnder{
+        width: 100%;
+        margin: 0;
+    }
 }
