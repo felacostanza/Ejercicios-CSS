@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#uno{
+    background-color: #e69ef2;
+}
+
+#dos{
+    background-color: #62D0FF;
+}
+
+#tres{
+    background-color: #ced5db;
+}
+
+#cuatro{
+    background-color: #85e38d;
+}
+
+div{
+    border: 3px solid #092454;
+    height: 150px;
+}

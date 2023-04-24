@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#pan__arriba{
+    margin: 0 auto;
+    width: 50%;
+}
+
+#pan__arriba h1{
+    background-color: rgb(241, 205, 137);
+    padding: 50px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    border-top-right-radius: 200px;
+    border-top-left-radius: 200px;
+    color: transparent;
+    border-bottom: 20px solid rgb(151, 81, 11);
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+#salchicha{
+    width: 60%;
+    margin: 0 auto;
+}
+
+#salchicha h3{
+    background-color: brown;
+    color: transparent;
+    padding: 40px;
+    border-radius: 50px;
+}
+
+#pan__abajo{
+    margin: 0 auto;
+    width: 50%;
+}
+
+#pan__abajo h1{
+    background-color: rgb(241, 205, 137);
+    padding: 20px;
+    margin-top: 0px;
+    border-bottom-right-radius: 200px;
+    border-bottom-left-radius: 200px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    color: transparent;
+    border-top: 20px solid rgb(151, 81, 11);
+    padding: 50px;
+}
+

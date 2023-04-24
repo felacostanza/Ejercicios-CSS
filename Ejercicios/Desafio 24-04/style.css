@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url(static/Rubik-Black.ttf);
+}
+
+body{
+    background: linear-gradient(to bottom right, grey, white);
+}
+
+h1{
+
+    font-family: sans-serif;
+    margin-left: 190px;
+    margin-top: 20px;
+    font-size: 40px;
+    text-transform: uppercase;
+    border-bottom: 2px solid red;
+    width: 7.5%;
+    padding-bottom: 10px;
+}
+
+#container{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: rgb(110, 177, 155);
+    justify-content: flex-start;
+    border-radius: 20px;
+    text-align: center;
+}
+
+#container a{
+    font-size: 200%;
+    margin: 0 auto;
+    text-decoration: none;
+    transition: background-color .5s;
+    color: black;
+    width: 100%;
+}
+
+#container a:hover{
+    background-color: black;
+    color: white;
+}
+
+.card{
+    width: 30%;
+    margin: 1.4%;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px gray;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    transition: transform .5s;
+    background-color: transparent;
+}
+
+.card:hover{
+    transform: scale(1.02);
+}
+
+.card a img{
+    width: 100%;
+}
+
