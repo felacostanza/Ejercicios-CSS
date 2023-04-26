@@ -1,0 +1,44 @@
+.navbar{
+    background-color: #d7f9f1;
+}
+
+header{
+    background-color: #086375;
+    margin-bottom: -8px;
+}
+
+.btn-outline-success{
+    --bs-btn-hover-bg: #7aa095;
+    --bs-btn-border-color: #7aa095;
+    --bs-btn-hover-border-color: #7aa095;
+}
+
+.card{
+    margin: 0 auto;
+    background-color: #afbc88;
+}
+
+.parrafo{
+    background-color: #618b4a;
+}
+
+.form{
+    background-color: #7aa095;
+}
+
+.form-check-input:checked{
+    background-color: #618b4a;
+    border-color:#d7f9f1;
+}
+
+.form-check-input:focus{
+    border-color:#afbc88;
+}
+
+form .btn-outline-success{
+    background-color: white;
+    color: black;
+    --bs-btn-hover-bg: black;
+    --bs-btn-border-color: black;
+    --bs-btn-hover-border-color: black;
+}

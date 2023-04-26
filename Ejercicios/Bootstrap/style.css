@@ -1,0 +1,5 @@
+.btn-primary{
+    background-color: gray;
+    --bs-btn-border-color: red;
+    --bs-btn-hover-bg: red;
+}
