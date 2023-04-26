@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url(Rubik-Regular.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+
+body{
+    font-family: 'Rubik';
+    line-height: 1.5;
+}
+
+.grid-container{
+    display: grid;
+}
+
+.header{
+    grid-area: header;
+    background-color: #a4161a;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sidenav{
+    grid-area: sidenav;
+    background-color: #d3d3d3;
+    padding-top: 50px;
+}
+
+.sidenav ul{
+    list-style-type: none;
+}
+
+.sidenav ul li{
+    width: 100%;
+    color: #0b090a;
+    transition: background-color .5s;
+}
+
+.sidenav ul li a{
+    display: block;
+    text-decoration: none;
+    font-size: 125%;
+    padding: 8px 16px;
+    color: black;
+}
+
+.sidenav ul li a:hover{
+    background-color: #0b090a;
+    color: white;
+}
+
+.main{
+    grid-area: main;
+    background-color: #f5f3f4;
+    padding: 50px;
+}
+
+.main-article{
+    background-color: #e5383b;
+    padding: 20px;
+    margin: 0 auto;
+    filter: drop-shadow(0 0 7px gray);
+    /*box-shadow: 10px 10px 5px gray;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+    margin-bottom: 16px;
+}
+
+.sidebar{
+    grid-area: sidebar;
+    background-color: #0b090a;
+    color: white;
+    padding: 50px;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: #161a1d;
+    color: white;
+    padding: 50px;
+}
+
+
+@media only screen and (max-width: 655px){
+    .grid-container{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(5, 0.2fr);
+        grid-template-areas: 
+        'header header  header  header'
+        'sidenav    sidenav sidenav sidenav'
+        'main   main    main    main'
+        'sidebar    sidebar sidebar sidebar'
+        'footer footer  footer  footer';
+        grid-column-gap: 8px;
+    }
+}
+
+@media only screen and (min-width: 656px) and (max-width: 1920px){
+    body{
+        margin: 0 88px;
+    }
+    .grid-container{
+        margin: 88px fixed;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 0.2fr repeat(3, 1fr) 0.2fr;
+        grid-template-areas: 
+        'header header  header  header  header  header  header  header  header  header  header  header'
+        'sidenav    sidenav main    main    main    main    main    main    main    sidebar sidebar sidebar'
+        'sidenav    sidenav main    main    main    main    main    main    main    sidebar sidebar sidebar'
+        'sidenav    sidenav main    main    main    main    main    main    main    sidebar sidebar sidebar'
+        'sidenav    sidenav  footer  footer  footer  footer  footer  footer  footer  footer  footer  footer';
+        grid-column-gap: 16px;
+        grid-row-gap: 16px;
+    }
+}
+
